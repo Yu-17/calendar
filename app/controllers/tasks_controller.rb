@@ -11,6 +11,11 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
+  def create
+    Task.create(task_parameter)
+    redirect_to 'tasks#index'
+  end
+
   def edit
     @task = Task.find(params[:id])
   end
@@ -23,6 +28,10 @@ class TasksController < ApplicationController
       render :action => "edit"
     end
   end
-  
+
+  def task_parameter
+    params.require(:task).permit(:title, :content, :start_time)
+  end
+
       
 end

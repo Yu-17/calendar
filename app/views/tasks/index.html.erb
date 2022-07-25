@@ -1,8 +1,15 @@
 <p>Month Calendar</p>
-
-<%= month_calendar do |date| %>
+<%= link_to 'タスク追加', new_task_path %>
+<%= month_calendar tasks: @tasks do |date, tasks| %>
     <%= date.day %>
+
+    <%= tasks.each do |task| %>
+        <div>
+        <%= task.title %>
+        </div>
+    <% end %>
 <% end %>
+
 
 <p>************************************************************************************************</p>
 <p>Week Calendar</p>
