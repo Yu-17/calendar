@@ -3,9 +3,9 @@
 <%= month_calendar tasks: @tasks do |date, tasks| %>
     <%= date.day %>
 
-    <%= tasks.each do |task| %>
+    <% @tasks.each do |task| %>
         <div>
-        <%= task.title %>
+            <%= task.title %>
         </div>
     <% end %>
 <% end %>

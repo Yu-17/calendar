@@ -13,21 +13,12 @@ class TasksController < ApplicationController
 
   def create
     Task.create(task_parameter)
-    redirect_to 'tasks#index'
+    redirect_to tasks_path
   end
 
-  def edit
-    @task = Task.find(params[:id])
-  end
 
-  def update
-    @task = Task.find(params[:id])
-    if @task.update_attributes(task_params)
-      redirect_to @task, :notice => 'Task was successfully updated.'
-    else
-      render :action => "edit"
-    end
-  end
+
+  private
 
   def task_parameter
     params.require(:task).permit(:title, :content, :start_time)
