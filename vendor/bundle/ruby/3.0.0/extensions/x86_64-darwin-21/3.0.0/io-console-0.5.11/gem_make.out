@@ -1,5 +1,5 @@
 current directory: /Users/ss/Desktop/Yu/mine/calendar/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
-/Users/ss/.rbenv/versions/3.0.4/bin/ruby -I /Users/ss/.rbenv/versions/3.0.4/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220720-22476-ja3btg.rb extconf.rb
+/Users/ss/.rbenv/versions/3.0.4/bin/ruby -I /Users/ss/.rbenv/versions/3.0.4/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220805-73817-q1epcq.rb extconf.rb
 checking for termios.h... yes
 checking for cfmakeraw() in termios.h... yes
 checking for sys/ioctl.h... yes
@@ -17,4 +17,4 @@ linking shared-object io/console.bundle
 
 current directory: /Users/ss/Desktop/Yu/mine/calendar/vendor/bundle/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 console.bundle ./.gem.20220720-22476-z6h3xh/io
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20220805-73817-gvabxy/io

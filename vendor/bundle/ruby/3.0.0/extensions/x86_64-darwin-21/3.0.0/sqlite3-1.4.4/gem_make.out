@@ -1,5 +1,5 @@
 current directory: /Users/ss/Desktop/Yu/mine/calendar/vendor/bundle/ruby/3.0.0/gems/sqlite3-1.4.4/ext/sqlite3
-/Users/ss/.rbenv/versions/3.0.4/bin/ruby -I /Users/ss/.rbenv/versions/3.0.4/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220720-22476-ga87mx.rb extconf.rb
+/Users/ss/.rbenv/versions/3.0.4/bin/ruby -I /Users/ss/.rbenv/versions/3.0.4/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220805-73817-sz5r78.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -84,4 +84,4 @@ ld: warning: directory not found for option '-L/usr/local/opt/sqlite/lib'
 
 current directory: /Users/ss/Desktop/Yu/mine/calendar/vendor/bundle/ruby/3.0.0/gems/sqlite3-1.4.4/ext/sqlite3
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20220720-22476-aop14s/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20220805-73817-ictee0/sqlite3
