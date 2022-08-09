@@ -13,6 +13,7 @@ class TasksController < ApplicationController
   end
 
   def create
+    
     Task.create(task_parameter)
     redirect_to tasks_path
   end
