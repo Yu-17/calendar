@@ -8,7 +8,7 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
-  def show 
+  def show
     @task = Task.find(params[:id])
   end
 
@@ -26,6 +26,10 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def create
+    Task.create(task_parameter)
+    redirect_to tasks_path
+  end
 
 
 
@@ -33,8 +37,8 @@ class TasksController < ApplicationController
 
 
   def task_parameter
-    params.require(:task).permit(:title, :content, :start_time)
+    params.require(:task).permit(:title, :content, :start_time, :end_time)
   end
 
-      
+
 end

@@ -3,9 +3,11 @@
 <%= month_calendar tasks: @tasks do |date, tasks| %>
     <%= date.day %>
 
-    <% @tasks.each do |task| %>
+    <% tasks.each do |task| %>
         <div>
+        <% if date == task.start_time.to_date %>
             <%= task.title %>
+        <% end %>
         </div>
     <% end %>
 <% end %>
@@ -13,9 +15,9 @@
 
 
 
-<p>******************************************************************</p>
+# <p>******************************************************************</p>
 
-<p>Weekly Calendar</p>
-<%= week_calendar do |date| %>
-    <%= date.day %>
-<% end %>
+# <p>Weekly Calendar</p>
+# <%= week_calendar do |date| %>
+#     <%= date.day %>
+# <% end %>
