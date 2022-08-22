@@ -10,6 +10,16 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <header>
+    <div class="header-logo">
+    <%= link_to("Calendar", "/") %>
+    </div>
+    <ul class = "header-menus">
+        <li>
+            <%= link_to("管理してみよう","/tasks") %>
+        </li>
+    </ul>
+</header>
   <body>
     <%= yield %>
   </body>
