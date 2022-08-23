@@ -1,10 +1,12 @@
 
-
-<h2>Monthly Calendar</h2>
-<%= link_to 'タスク追加', new_task_path %>
-<%= month_calendar tasks: @tasks do |date, tasks| %>
-    <%= date.day %>
-
+<div class="top">
+    <h2>Monthly Calendar</h2>
+        <div class="top-message">
+            <%= link_to 'タスク追加', new_task_path %>
+            <%= month_calendar tasks: @tasks do |date, tasks| %>
+            <%= date.day %>
+        </div>
+</div>
     <% tasks.each do |task| %>
         <div>
         <% if date == task.start_time.to_date %>
